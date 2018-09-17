@@ -170,16 +170,6 @@ public class TransactionAnalyseJob {
         System.out.println("Sum of avr temp -> " + sum_per_month_avg_Temp_List);
 
 
-//        JavaPairRDD<Integer, Integer> sum_per_month_avg_Temp_List =
-//                rawTransactions.mapToPair(
-//                        new PairFunction<String, Integer, Integer>() {
-//                            @Override
-//                            public Tuple2<Integer, Integer> call(String s) {
-//                                Transaction transaction = new Transaction(s);
-//                                return new Tuple2<>(transaction.getTransactionID(), transaction.getUserID());
-//                            }
-//                        });
-
         List<Double> avg_Temp_per_Month_counted = new ArrayList<>();
         double agv_Temp_value;
         for(int i = 0; i<sum_per_month_avg_Temp_List.size(); i++){
