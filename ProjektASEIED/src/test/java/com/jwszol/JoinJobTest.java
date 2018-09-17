@@ -26,8 +26,9 @@ public class JoinJobTest { ;
         TransactionAnalyseJob job = new TransactionAnalyseJob(sc);
 
         job.read_data(path);
-        job.print_data();
+        //job.print_data();
         job.processing_data_for_wban_Number();
         job.processing_data_for_specyfic_days();
+        job.processing_data_all();
     }
 }
